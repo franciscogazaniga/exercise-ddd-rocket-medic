@@ -1,4 +1,4 @@
-import { Doctor } from "./Doctor.js"
+import { Doctor } from "../entities/Doctor.js"
 
 export class DoctorService {
   constructor(doctorRepository) {

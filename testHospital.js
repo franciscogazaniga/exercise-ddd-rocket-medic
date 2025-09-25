@@ -1,18 +1,6 @@
-import { Address } from './src/shared/Address.js'
-import { EmergencyContact } from './src/shared/EmergencyContact.js'
-
-import { Appointment } from './src/patient/Appointment.js'
-import { AppointmentRepository } from './src/patient/AppointmentRepository.js'
-
-import { Exam } from './src/patient/Exam.js'
-import { ExamRepository } from './src/patient/ExamRepository.js'
-
-import { Patient } from './src/patient/Patient.js'
-import { PatientRepository } from './src/patient/PatientRepository.js'
-
-import { Doctor } from './src/doctor/Doctor.js'
-import { DoctorRepository } from './src/doctor/DoctorRepository.js'
-import { DoctorService } from './src/doctor/DoctorService.js'
+import { Doctor } from './src/domain/entities/Doctor.js'
+import { DoctorRepository } from './src/infrastructure/persistence/DoctorRepository.js'
+import { DoctorService } from './src/domain/services/DoctorService.js'
 
 // const address = new Address(
 //     "Rua das Flores",

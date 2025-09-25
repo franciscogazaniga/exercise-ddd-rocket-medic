@@ -1,5 +1,5 @@
 import { Allergy } from "./Allergy.js"
-import { Patient } from "./Patient.js"
+import { Patient } from "../../patient/Patient.js"
 
 export class PatientService {
   constructor(patientRepository) {
