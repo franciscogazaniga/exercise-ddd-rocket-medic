@@ -1,4 +1,4 @@
-import { Diagnosis } from '../../domain/value-objects/medical-record/Diagnosis.js'
+import { Diagnosis } from './Diagnosis.js'
 import { Medication } from './Medication.js'
 import { Treatment } from './Treatment.js'
 

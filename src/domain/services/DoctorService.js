@@ -58,7 +58,7 @@ export class DoctorService {
       throw new Error("Doctor not found.")
     }
 
-    return doctor.workingHours.hours()
+    return doctor.workingHours.hours
   }
 
   addDoctorSpecialty(doctorId, specialty) {

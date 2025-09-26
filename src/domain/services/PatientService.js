@@ -1,5 +1,5 @@
-import { Allergy } from "./Allergy.js"
-import { Patient } from "../../patient/Patient.js"
+import { Allergy } from "../value-objects/Allergy.js"
+import { Patient } from "../entities/Patient.js"
 
 export class PatientService {
   constructor(patientRepository) {

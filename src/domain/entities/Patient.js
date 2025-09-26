@@ -1,6 +1,6 @@
-import { Appointment } from '../domain/entities/Appointment.js'
-import { MedicalRecord } from './record/MedicalRecord.js'
-import { Exam } from '../domain/entities/Exam.js'
+import { Appointment } from './Appointment.js'
+import { MedicalRecord } from '../value-objects/medical-record/MedicalRecord.js'
+import { Exam } from './Exam.js'
 
 export class Patient {
   constructor(id, identificationDocument, name, birthDate, gender, bloodType, address, phone, email, emergencyContact) {
