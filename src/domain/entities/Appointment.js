@@ -8,8 +8,4 @@ export class Appointment {
     this.status = status;
     this.notes = notes;
   }
-
-  hasConflict(otherAppointment) {
-    return this.date.getTime() === otherAppointment.date.getTime()
-  }
 }

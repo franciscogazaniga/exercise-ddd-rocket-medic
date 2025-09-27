@@ -7,11 +7,11 @@ export class Repository {
     if(this.data.has(id)) {
       throw new Error("Entity already exists.")
     }
-    this.data.set(id, entity)
+    this.data.set(Number(id), entity)
   }
 
   findById(id) {
-    return this.data.get(id)
+    return this.data.get(Number(id))
   }
 
   findAll() {

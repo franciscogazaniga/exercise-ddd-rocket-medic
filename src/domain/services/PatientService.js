@@ -6,20 +6,7 @@ export class PatientService {
     this.patientRepository = patientRepository
   }
 
-  addPatient(patientData) {
-    const patient = new Patient(
-      patientData.id,
-      patientData.identificationDocument,
-      patientData.name,
-      patientData.birthDate,
-      patientData.gender,
-      patientData.bloodType,
-      patientData.address,
-      patientData.phone,
-      patientData.email,
-      patientData.emergencyContact
-    )
-
+  addPatient(patient) {
     this.patientRepository.add(patient.id, patient)
     return patient
   }

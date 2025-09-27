@@ -5,17 +5,7 @@ export class ExamService {
     this.examRepository = examRepository
   }
 
-  scheduleExam(examData) {
-    const exam = new Exam(
-      examData.id,
-      examData.type,
-      examData.result,
-      examData.date,
-      examData.local,
-      examData.responsible,
-      examData.patient
-    )
-
+  scheduleExam(exam) {
     this.examRepository.add(exam.id, exam)
     return exam
   }
@@ -34,6 +24,10 @@ export class ExamService {
 
   findExamByDate(date) {
     return this.examRepository.findByDate(date)
+  }
+
+  findAllExams() {
+    return this.examRepository.findAll()
   }
 
   updateExam(examId, updatedData) {
